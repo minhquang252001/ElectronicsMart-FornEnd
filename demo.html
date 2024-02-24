@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <!-- Thêm đường link jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<!-- Nút lọc danh mục -->
+<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".1" id="filterButton">
+    T-shirt
+</button>
+
+<!-- Sản phẩm -->
+<div class="col-md-4 product-men" category="1">
+    <div class="men-pro-item simpleCart_shelfItem">
+        <!-- Nội dung sản phẩm -->
+    </div>
+</div>
+
+<!-- Script jQuery để xử lý bộ lọc -->
+<script>
+    $(document).ready(function () {
+        // Bắt sự kiện click vào nút "T-shirt"
+        $('#filterButton').on('click', function () {
+            // Lấy giá trị của category
+            var categoryValue = $(this).data('filter');
+            console.log("Category: " + categoryValue);
+            // Thực hiện các hành động khác tùy theo category
+            // ...
+        });
+    });
+</script>
+
+</body>
+</html>
